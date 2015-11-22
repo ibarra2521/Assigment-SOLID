@@ -13,6 +13,13 @@
 		41E934D81C009CB1006DA964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E934D71C009CB1006DA964 /* Assets.xcassets */; };
 		41E934DB1C009CB1006DA964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E934D91C009CB1006DA964 /* LaunchScreen.storyboard */; };
 		41E934E61C009CB1006DA964 /* Assigment_SOLIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E934E51C009CB1006DA964 /* Assigment_SOLIDTests.swift */; };
+		41E934F11C009ED6006DA964 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E934F01C009ED6006DA964 /* Circle.swift */; };
+		41E934F31C009F8F006DA964 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E934F21C009F8F006DA964 /* Square.swift */; };
+		41E934F51C009FDD006DA964 /* AreaCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E934F41C009FDD006DA964 /* AreaCalculator.swift */; };
+		41E934F71C00A360006DA964 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E934F61C00A360006DA964 /* Shape.swift */; };
+		41E934F91C00D32D006DA964 /* VolumeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E934F81C00D32D006DA964 /* VolumeCalculator.swift */; };
+		41E934FB1C00D53E006DA964 /* Cuboid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E934FA1C00D53E006DA964 /* Cuboid.swift */; };
+		41E934FD1C01E563006DA964 /* SumCalculatorOutputter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E934FC1C01E563006DA964 /* SumCalculatorOutputter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		41E934E11C009CB1006DA964 /* Assigment SOLIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assigment SOLIDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E934E51C009CB1006DA964 /* Assigment_SOLIDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assigment_SOLIDTests.swift; sourceTree = "<group>"; };
 		41E934E71C009CB1006DA964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E934F01C009ED6006DA964 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		41E934F21C009F8F006DA964 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		41E934F41C009FDD006DA964 /* AreaCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaCalculator.swift; sourceTree = "<group>"; };
+		41E934F61C00A360006DA964 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		41E934F81C00D32D006DA964 /* VolumeCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeCalculator.swift; sourceTree = "<group>"; };
+		41E934FA1C00D53E006DA964 /* Cuboid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cuboid.swift; sourceTree = "<group>"; };
+		41E934FC1C01E563006DA964 /* SumCalculatorOutputter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumCalculatorOutputter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,13 @@
 				41E934D01C009CB1006DA964 /* AppDelegate.swift */,
 				41E934D21C009CB1006DA964 /* ViewController.swift */,
 				41E934D41C009CB1006DA964 /* Main.storyboard */,
+				41E934F61C00A360006DA964 /* Shape.swift */,
+				41E934F01C009ED6006DA964 /* Circle.swift */,
+				41E934F21C009F8F006DA964 /* Square.swift */,
+				41E934FA1C00D53E006DA964 /* Cuboid.swift */,
+				41E934F41C009FDD006DA964 /* AreaCalculator.swift */,
+				41E934F81C00D32D006DA964 /* VolumeCalculator.swift */,
+				41E934FC1C01E563006DA964 /* SumCalculatorOutputter.swift */,
 				41E934D71C009CB1006DA964 /* Assets.xcassets */,
 				41E934D91C009CB1006DA964 /* LaunchScreen.storyboard */,
 				41E934DC1C009CB1006DA964 /* Info.plist */,
@@ -199,8 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E934F51C009FDD006DA964 /* AreaCalculator.swift in Sources */,
+				41E934F91C00D32D006DA964 /* VolumeCalculator.swift in Sources */,
+				41E934FD1C01E563006DA964 /* SumCalculatorOutputter.swift in Sources */,
+				41E934F71C00A360006DA964 /* Shape.swift in Sources */,
+				41E934F31C009F8F006DA964 /* Square.swift in Sources */,
 				41E934D31C009CB1006DA964 /* ViewController.swift in Sources */,
+				41E934FB1C00D53E006DA964 /* Cuboid.swift in Sources */,
 				41E934D11C009CB1006DA964 /* AppDelegate.swift in Sources */,
+				41E934F11C009ED6006DA964 /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
