@@ -10,7 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var lblResults: UILabel!
+    @IBOutlet weak var txtfRadio: UITextField!
+    @IBOutlet weak var txtfLadoCuadrado: UITextField!
+    @IBOutlet weak var txtfLadoCubo: UITextField!
+    @IBOutlet weak var txtfAreaCirculo: UITextField!
+    @IBOutlet weak var txtfAreaCuadrado: UITextField!
+    @IBOutlet weak var txtfVolumenCubo: UITextField!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,15 +32,13 @@ class ViewController: UIViewController {
     
     @IBAction func btnAreaCalculate(sender: AnyObject) {
         var arrayShapes = [Shape]()
-        let circle = Circle(radius: 2.0)
-        let square1 = Square(length: 5.0)
-        let square2 = Square(length: 6.0)
-        let cuboid = Cuboid(length: 3.0)
+        var arrayVolume = [Shape]()
+        let circle = Circle(radius: Float(txtfRadio.text!)!)
+        let square1 = Square(length: Float(txtfLadoCuadrado.text!)!)
+        let cuboid = Cuboid(length: Float(txtfLadoCubo.text!)!)
         arrayShapes.append(circle)
         arrayShapes.append(square1)
-        arrayShapes.append(square2)
-        arrayShapes.append(cuboid)
-        
+        arrayVolume.append(cuboid)
         
         let areas = AreaCalculator(shapes: arrayShapes)
         let outputAreas = SumCalculatorOutputter(calculator: areas)
@@ -43,7 +50,12 @@ class ViewController: UIViewController {
             print(item)
             
         }
-        lblResults.text = results
+        txtfAreaCirculo.text = String(arrayResultAreas[0])
+        txtfAreaCuadrado.text = String(arrayResultAreas[1])
+        let volume = VolumeCalculator(shapes: arrayVolume);
+        volume.getArea()
+        volume.getVolume()
+        txtfVolumenCubo.text = String(volume.getVolume()[0])
     }
 
 }

@@ -17,5 +17,21 @@ class VolumeCalculator: AreaCalculator {
         }
         return sumData
     }
+    
+    func getArea () -> [Float] {
+        var areas = [Float]()
+        for shape in self.shapes {
+            areas.append(shape.area())
+        }
+        return areas
+    }
+
+    func getVolume () -> [Float] {
+        var volumes = [Float]()
+        for shape in self.shapes {
+            volumes.append(shape.volume())
+        }
+        return volumes
+    }
 
 }
